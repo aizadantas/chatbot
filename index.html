@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot de Ensino</title>
+</head>
+<body>
+    <h1>ChatBot de Ensino</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Submeter Arquivo</button>
+    </form>
+    <form action="/ask" method="post">
+        <input type="text" name="question" placeholder="Faça sua pergunta">
+        <button type="submit">Perguntar</button>
+    </form>
+    {% if answer %}
+    <div>
+        <h2>Resposta:</h2>
+        <p>{{ answer }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
