@@ -11,30 +11,6 @@ Este projeto é um ChatBot desenvolvido em Python com uma interface web para res
 - Armazenamento do histórico de conversas em um banco de dados PostgreSQL.
 - Implementação de RAG (Retrieval-augmented generation) para otimizar a busca e diminuir a alucinação.
 
-## Instalação
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/chatbot-material-ensino.git
-cd chatbot-material-ensino
-```
-
-2. Crie um ambiente virtual e instale as dependências:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-3. Configure o banco de dados PostgreSQL e ajuste as configurações no arquivo `config.py`.
-
-4. Execute a aplicação:
-
-```bash
-flask run
-```
 
 ## Uso
 
