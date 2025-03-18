@@ -14,7 +14,7 @@ engine = db.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
 Session = sessionmaker(bind=engine)
 session = Session()
 
-openai.api_key = 'YOUR_OPENAI_API_KEY'
+openai.api_key = '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'
 
 @app.route('/')
 def index():
